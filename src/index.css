@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 500px;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.colorbtn{
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#colorContainer{
+  display: flex;
+  gap: 10px;
+}
+
+.map{
+  width: 200px;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  position: relative;
+}
+
+.marker{
+  width: 10px;
+  aspect-ratio: 1;
+  background: black;
+  position: absolute;
+}
